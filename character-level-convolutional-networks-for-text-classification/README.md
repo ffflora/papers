@@ -1,6 +1,11 @@
+##  Background Knowledge 
+
+- [CNN](https://www.zhihu.com/question/52668301/answer/131573702) 
+- One-hot encoding
+
 ## Some highlights of the paper
 
-When trained on large-scale datasets, deep ConvNets do not require the knowledge of words, in addition to the conclusion from previous research that ConvNets do not require the knowledge about the syntactic or semantic structure of a language. 
+When trained on large-scale datasets, deep ConvNets **do not require the knowledge of words**, in addition to the conclusion from previous research that ConvNets **do not require the knowledge about the syntactic or semantic structure of a language.** (Chinese News corpus convert to pinyin first, and then apply this model achieves only 10 something testing error.)
 
 Dataset size forms a dichotomy between traditional and ConvNets models: the larger datasets tend to perform better.  
 
@@ -10,19 +15,21 @@ ConvNets may work well for user-generated data.
 
 #### Text Classification:
 
-a.  文本分类的概念
+a.  Text classification could be used for NLP tasks, Information retrieval, Information filtering, spam email filtering,...
 
-文本分类就是将一句或者一段文本内容分到指定的类别。文本分类是自然语言处理的基础任务，应用于自然语言处理的各个领域，如信息检索，信息过滤，垃圾邮件分类。
+b.  Text Classification models: word vector and ConvNets
 
-b.  两种基于词向量和卷积神经网络的文本分类模型
+word vector: represent each word in the sentence with a vector, and all of these vector makes matrix, which represent the whole document/sentence.
 
-基于词向量和分类模型就是将一句话中的每个词表示成词向量，然后这句话将可以表示成一个矩阵，然后使用卷积神经网络分类模型即可对文本进行分类。
+c.  Concepts about CNN:
 
-c.  CNN的相关概念
+1d kernel, scale, padding, ...
 
-本文使用的是一维卷积，对于一维卷积，需要了解卷积核的尺寸，卷积核个数，步长以及padding这些概念。
+https://github.com/ffflora/facial-expression-recognition-cv/blob/master/notes.md
 
-The History of Text Classification:
+
+
+#### The History of Text Classification:
 
 ~ 1950 - 1980: Apply experts' rules to do classification 
 
@@ -39,3 +46,35 @@ The History of Text Classification:
   - PCA, SVD
 
 ~ 2013 - present: deep learning: word vector + NN
+
+---
+
+### Model
+
+Input: one-hot 
+
+k-means vs LSTM
+
+---
+
+Q: This model is quite simple, why bother publish a paper?
+
+A:  It is kind of easy to reproduce, and since it has done a lot of experiments on different datasets, it could be used as the comparative results for later or new model experiments.
+
+
+
+Q: Disadvantages of this model?
+
+A:  very deep - 9 layers; much params; have better results on larger datasets; not easy to train.
+
+
+
+Q: Any other char-level model?
+
+A: char-embedding 
+
+---
+
+#### Conclusion
+
+This paper has provided with many comparative results with different models and datasets, including BOW and Deep learning models; the biggest achievement is that it offers a new method that is doing text classification based on character-level, instead of word vector, which is one of the most popular method nowadays. What worth to mention is that this model has a best or very comparative results on different datasets. 
