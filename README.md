@@ -1,3 +1,11 @@
+# papers
+
+This repository contains some NLP papers and notes that I read.
+
+
+1. [Skip-Thought Vectors](https://github.com/ffflora/papers/tree/master/Skip-Thought%20Vectors)  
+
+
 ### Why read paper? :page_with_curl: 
 
 1. Build up basic knowledge: some related works in the paper could help understand the basic skills set of the area, as well as to gain the knowledge about classic algorithms;
