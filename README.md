@@ -1,10 +1,10 @@
-# papers
+# papers 
 
 This repository contains some NLP papers and notes that I read.
 
 
 1. [Skip-Thought Vectors](https://github.com/ffflora/papers/tree/master/Skip-Thought%20Vectors)  
-
+2. [character level convolutional networks for text classification](https://github.com/ffflora/papers/tree/master/character-level-convolutional-networks-for-text-classification)
 
 ### Why read paper? :page_with_curl: 
 
