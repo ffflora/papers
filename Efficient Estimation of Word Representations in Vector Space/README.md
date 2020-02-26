@@ -116,3 +116,34 @@ TODO: predict the words around the `basketball`
 - `p(wt+1|wt)` = ?
 - `p(wt+1|wt)` = ?
 
+
+
+---
+
+# Highlights of the paper
+
+## 1.2 Previous Works
+
+## SVD
+
+Window based co-occurrence matrix 
+
+![Window based co-occurrence matrix ](https://image.slidesharecdn.com/276ntstrb68zmgaigvia-signature-4919aae08f0ae9f3256efdc5cbdacac6c2a288ad9f47715bbefcb0ae9f95eb31-poli-170419184013/95/a-panorama-of-natural-language-processing-31-638.jpg?cb=1492627773)
+
+dimension: `V*V ` (`row*column`)
+
+need to do dimension reduction => `V*k, i.e., k = 300` (we can't do reduction on the rows of the matrix, since the rows represent the words in the sentence, and each word needs its own vector representation; but we can do the reduction on the columns, since not every word in the columns appear in the sentence.)
+
+#### How to do the dimension reduction?
+
+**UV decomposition.** => SVD 
+
+## Model Architectures
+
+It focus on distributed representations of words learned by NN instead of LDA. LDA costs too much on large datasets.
+
+### 2.1 Feedforward NN Language Model (NNLM)
+
+based on the (n-1) words upfront, to predict the probability of the nth word, and need to maximize the probability. 
+
+`p(xi|xi-1,xi-2,....xi-n)`
