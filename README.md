@@ -1,6 +1,6 @@
 # Papers 
 
-This repository contains some NLP papers and notes that I read.
+This repository contains some NLP papers and notes that I have read or am interested in.
 
 
 1. [Skip-Thought Vectors](https://github.com/ffflora/papers/tree/master/Skip-Thought%20Vectors)  
