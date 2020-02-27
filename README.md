@@ -16,8 +16,8 @@ This repository contains some NLP papers and notes that I read.
 
 ### What papers should you read?
 
-1. Reviews. (综述): basic knowledge, key skills and algorithms, implementation method, and applications
-2. Representative papers (代表性论文): the most popular/important papers of the area; usually could get information about these kind of papers from the *Related Work* from reviews or other papers, with open source codes come along; 
+1. Reviews: basic knowledge, key skills and algorithms, implementation method, and applications
+2. Representative papers: the most popular/important papers of the area; usually could get information about these kind of papers from the *Related Work* from reviews or other papers, with open source codes come along; 
 3. State-of-the-Art: newest/most popular trends in the industry.
 
 #### Paper sources
