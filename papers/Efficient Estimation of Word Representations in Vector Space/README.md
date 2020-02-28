@@ -147,3 +147,15 @@ It focus on distributed representations of words learned by NN instead of LDA. L
 based on the (n-1) words upfront, to predict the probability of the nth word, and need to maximize the probability. 
 
 `p(xi|xi-1,xi-2,....xi-n)`
+
+## Why does word2vc is really efficient?
+- Optimized network structure:
+  - remove hidden layer
+  - tree encoding classification 
+  - negative sampling
+  - subsampling on high frequency words
+- programming tricks:
+  - parallel 
+  - operations on low and high frequency words
+  - hash dict
+  - 指数查表
