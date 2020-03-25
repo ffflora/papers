@@ -28,6 +28,14 @@ Markov chain k-gram model
 
 #### Softmax
 
+#### Markov Chain 
+
+#### Perplexity 
+
+[Evaluation of Language Models through Perplexity and Shannon Visualization Method](https://medium.com/@gandhi.meet/evaluation-of-language-models-through-perplexity-and-shannon-visualization-method-9148fbe10bd0)
+NLP model evaluation metric,  higher the probability for the sentence, better the NLP model, smaller the perplexity. 
+![](https://miro.medium.com/max/439/1*vkk7LoxkmIRJgbfLs6Rddg.png)
+
 ---
 
 # Distributed Representation 
