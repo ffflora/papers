@@ -20,15 +20,14 @@ Use conditional probability `p(xi|xi-1)`:
 
 `p(xi|xi-1) = count(xi-1,xi)/count(xi)` 
 
-Markov chain k-gram model
+Markov chain k-gram model。
+The difference between the word2vec and Language model is: language model uses the previous word to predict next word, and the word2vec simplifies the process, just use words to predict words. It has two difference approaches: skip-gram and cbow. skip-gram uses the "center" word to predict the context, and cbow uses the context to predict the "center" word.
 
 #### Sigmod 
 
 #### Gradient Descent
 
 #### Softmax
-
-#### Markov Chain 
 
 #### Perplexity 
 
@@ -155,6 +154,11 @@ It focus on distributed representations of words learned by NN instead of LDA. L
 based on the (n-1) words upfront, to predict the probability of the nth word, and need to maximize the probability. 
 
 `p(xi|xi-1,xi-2,....xi-n)`
+
+### Recurrent Neural Net Language Model (RNNLM) 
+![](https://www.researchgate.net/profile/Xunying_Liu/publication/273145714/figure/fig1/AS:614072806547462@1523417774220/A-full-output-layer-RNNLM-with-OOS-nodes.png)
+
+predict one word in each step. when predict the nth word, this model uses all the info from n-1 words. Unlike NNLM is an n-gram model, his model uses all previous infomation from the words. 
 
 ## Why does word2vc is really efficient?
 - Optimized network structure:
